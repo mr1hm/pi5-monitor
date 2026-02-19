@@ -47,6 +47,17 @@ services:
     depends_on:
       - prometheus
   
+  smartctl-exporter:
+    image: prometheuscommunity/smartctl-exporter:latest
+    container_name: smartctl-exporter
+    restart: unless-stopped
+    privileged: true
+    ports:
+      - "9633:9633"
+    volumes:
+      - /dev:/dev:ro
+    user: root
+  
 volumes:
   prometheus_data:
   grafana_data:
