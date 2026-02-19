@@ -48,7 +48,7 @@ services:
       - prometheus
   
   smartctl-exporter:
-    image: prometheuscommunity/smartctl-exporter:latest
+    image: matusnovak/prometheus-smartctl:latest
     container_name: smartctl-exporter
     restart: unless-stopped
     privileged: true
