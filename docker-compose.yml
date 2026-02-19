@@ -53,7 +53,7 @@ services:
     restart: unless-stopped
     privileged: true
     ports:
-      - "9633:9633"
+      - "9902:9902"
     volumes:
       - /dev:/dev:ro
     user: root
