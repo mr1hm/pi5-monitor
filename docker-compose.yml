@@ -27,6 +27,8 @@ services:
     command:
       - --config.file=/etc/prometheus/prometheus.yml
       - --storage.tsdb.retention.time=30d
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     depends_on:
       - node-exporter
   
