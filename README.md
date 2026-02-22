@@ -1,4 +1,4 @@
-# Pi 5 Monitoring Stack
+# Pi 5 Monitor
 
 Lightweight monitoring for Raspberry Pi 5 using Prometheus, Grafana, and Node Exporter.
 
