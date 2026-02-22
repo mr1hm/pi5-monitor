@@ -2,8 +2,6 @@
 
 Lightweight monitoring for Raspberry Pi 5 using Prometheus, Grafana, and Node Exporter.
 
-![Grafana Dashboard](grafana-dashboard.png)
-
 ## Stack
 
 | Service | Port | Purpose |
